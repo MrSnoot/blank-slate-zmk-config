@@ -70,7 +70,7 @@
             bindings = <
  &kp Q      &kp Y      &kp O      &kp P      &kp Z      &none      &none      &kp W      &kp C      &kp M      &kp V      &kp X
  &kp H      &kp A      &kp E      &kp I      &kp K      &none      &none      &kp G      &kp T      &kp N      &kp S      &kp R
- &kp J      &kp QUOT   &kp SEMI   &kp U      &kp U      &none      &none      &kp B      &kp D      &kp L      &kp F      &kp S
+ &kp J      &kp QUOT   &kp SEMI   &kp U      &kp LBKT   &none      &none      &kp B      &kp D      &kp L      &kp F      &kp RA(MINUS)
  &none      &none      &none      &mo NUM_L   &lt NAV_L SPACE       &lt NAV_L ENTER      &mo SYM_L   &kp LALT   &kp RGUI      &kp RSHIFT
             >;
         };
