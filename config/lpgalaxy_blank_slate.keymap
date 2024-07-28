@@ -58,10 +58,10 @@
         base_layer {
             label = "Base";
             bindings = <
- &kp Q      &kp Y      &kp O      &kp P      &kp Z      &none      &none      &kp W      &kp C      &kp M      &kp V      &kp X
- &kp H      &kp A      &kp E      &kp I      &kp K      &none      &none      &kp G      &kp T      &kp N      &kp S      &kp R
- &kp J      &kp SEMI   &kp QUOT   &kp U      &kp LBKT   &none      &none      &kp B      &kp D      &kp L      &kp F      &kp MINUS
- &none      &none      &none      &mo NUM_L  &lt NAV_L SPACE       &lt NAV_L ENTER       &sl SYM_L  &none      &none      &none
+ &kp Q       &kp Y       &kp O       &kp P      &kp Z      &none      &none      &kp W      &kp C      &kp M       &kp V      &kp X
+ &mt LSHFT H &mt LALT A  &mt LCTRL E &kp I      &kp K      &none      &none      &kp G      &kp T      &mt LCTRL N &mt LALT S &mt RSHFT R
+ &kp J       &kp SEMI    &kp QUOT    &kp U      &kp LBKT   &none      &none      &kp B      &kp D      &kp L       &kp F      &mt LGUI MINUS 
+ &none       &none       &none       &mo NUM_L  &lt NAV_L SPACE       &lt NAV_L ENTER       &sl SYM_L  &none       &none      &none
             >;
         };
 
@@ -78,20 +78,20 @@
         num_func_layer {
             label = "Num_Func";
             bindings = <
-&kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &none      &none    &kp SLASH  &kp N7     &kp N8     &kp N9     &kp MINUS
-&kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &none      &none    &kp ASTRK  &kp N4     &kp N5     &kp N6     &kp PLUS
-&kp F11    &kp F12    &none      &none      &none      &none      &none    &kp COMMA  &kp N1     &kp N2     &kp N3     &kp DOT
-&trans     &trans     &trans     &trans     &trans                         &kp N0     &trans     &trans     &trans     &trans
+&kp F1       &kp F2      &kp F3       &kp F4      &kp F5     &none      &none    &kp LS(N7)   &kp N7      &kp N8       &kp N9      &kp SLASH
+&mt LSHFT F6 &mt LSLT F7 &mt LCTRL F8 &mt LGUI F9 &kp F10    &none      &none    &kp LS(RBKT) &mt LGUI N4 &mt LCTRL N5 &mt LALT N6 &mt RSHFT RBKT
+&kp F11      &kp F12     &none        &none       &none      &none      &none    &kp COMMA    &kp N1      &kp N2       &kp N3      &kp DOT
+&trans       &trans      &trans       &trans      &trans                         &kp N0       &trans      &trans       &trans      &trans
             >;
         };
 
         symbol_layer {
             label = "Symbol";
             bindings = <
-&kp LS(N1)    &kp LS(GRAVE) &kp LS(N3) &kp DLLR   &kp AMPS     &none     &none     &none      &trans     &trans     &kp EQUAL  &kp LS(EQUAL)
-&kp LS(MINUS) &kp RA(N7)    &kp RA(N0) &kp LS(N8) &kp LS(N9)   &none     &none     &none      &kp PIPE   &kp GRAVE  &kp TILDE  &kp PSCRN
-&trans        &kp RA(N8)    &kp RA(N9) &kp NUBS   &kp LS(NUBS) &none     &none     &none      &none      &none      &none      &none
-&trans        &trans        &trans     &trans     &trans                           &trans     &trans     &trans     &trans     &trans
+&kp LS(N1)    &kp LS(GRAVE) &kp LS(N3) &kp LS(N4) &kp LS(N6)   &none     &none     &none      &kp LC(LS(LA(L))) &kp LC(LS(LA(B))) &kp EQUAL    &kp LS(EQUAL)
+&kp LS(MINUS) &kp RA(N7)    &kp RA(N0) &kp LS(N8) &kp LS(N9)   &none     &none     &none      &kp RA(NUBS)      &kp GRAVE         &kp RA(RBKT) &kp PSCRN
+&none         &kp RA(N8)    &kp RA(N9) &kp NUBS   &kp LS(NUBS) &none     &none     &none      &none             &none             &none        &none
+&trans        &trans        &trans     &trans     &trans                           &trans     &trans            &trans            &trans       &trans
             >;
         };
 
