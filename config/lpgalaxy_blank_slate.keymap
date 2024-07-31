@@ -28,11 +28,6 @@
        zmk,matrix_transform = &dual_2u_transform;
     };
 
-
-    require-prior-idle-ms = <150>;
-    hold-trigger-key-positions = <KEYS_R THUMBS>;
-    hold-trigger-on-release;   
-
     behaviors {
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -41,6 +36,8 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
+            // hold-trigger-key-positions = <KEYS_R THUMBS>;
+            // hold-trigger-on-release;   
             bindings = <&kp>, <&kp>;
         };
     };
