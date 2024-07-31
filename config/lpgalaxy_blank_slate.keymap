@@ -317,7 +317,7 @@
  &kp Q        &kp Y       &kp O        &kp P      &kp Z      &none      &none      &kp W      &kp C      &kp M       &kp V      &kp X
  &bhm LSHFT H &bhm LALT A &bhm LCTRL E &kp I      &kp K      &none      &none      &kp G      &kp T      &bhm LCTRL N &bhm LALT S &bhm RSHFT R
  &kp J        &kp SEMI    &kp QUOT     &kp U      &kp LBKT   &none      &none      &kp B      &kp D      &kp L       &kp F      &bhm LGUI MINUS 
- &none        &none       &none        &mo NUM_L  &lt NAV_L SPACE       &lt NAV_L ENTER       &sl SYM_L  &none       &none      &none
+ &none        &none       &none        &sl NUM_L  &lt NAV_L SPACE       &lt NAV_L ENTER       &sl SYM_L  &none       &none      &none
             >;
         };
 
