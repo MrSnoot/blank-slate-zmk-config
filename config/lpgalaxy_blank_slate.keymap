@@ -19,7 +19,7 @@
 #define ADJ_L 4
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-// &lt { quick_tap_ms = <200>; };
+&lt { quick_tap_ms = <200>; };
 
 #define BT(n) BT_SEL n
 
@@ -326,7 +326,7 @@
             bindings = <
 &bt BT_CLR &none      &none      &none      &none      &none      &none     &none      &kp HOME   &kp UP     &kp END    &kp PG_UP
 &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans     &none      &none     &tb_scr    &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN
-&bt BT(0)  &bt BT(1)  &bt BT(2)  &bt BT(3)  &bt BT(4)  &none      &none     &none      &mkp MB1   &mkp MB2   &LCTRL    &LSHFT
+&bt BT(0)  &bt BT(1)  &bt BT(2)  &bt BT(3)  &bt BT(4)  &none      &none     &none      &mkp MB1   &mkp MB2   &kp LCTRL  &kp LSHFT
 &trans     &trans     &trans     &trans     &trans                          &trans     &trans     &trans     &trans     &trans
             >;
         };
