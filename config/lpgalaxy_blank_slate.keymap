@@ -104,7 +104,7 @@
             tap-ms = <40>;
             bindings 
                 = <&kp SLCK>
-                , <&macro_wait_time 29>
+                , <&macro_wait_time 30>
                 , <&kp SLCK>;
         };
         tb_dpi: trackball_change_dpi {
@@ -114,7 +114,7 @@
             tap-ms = <40>;
             bindings 
                 = <&kp KP_NLCK>
-                , <&macro_wait_time 29>
+                , <&macro_wait_time 30>
                 , <&kp KP_NLCK>;
         };
         tb_rst: trackball_reset {
@@ -124,7 +124,7 @@
             tap-ms = <40>;
             bindings 
                 = <&kp CLCK>
-                , <&macro_wait_time 29>
+                , <&macro_wait_time 30>
                 , <&kp CLCK>;
         };
     };
@@ -325,8 +325,8 @@
             label = "Nav";
             bindings = <
 &bt BT_CLR &none      &none      &none      &none      &none      &none     &none      &kp HOME   &kp UP     &kp END    &kp PG_UP
-&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans     &none      &none     &none      &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN
-&bt BT(0)  &bt BT(1)  &bt BT(2)  &bt BT(3)  &bt BT(4)  &none      &none     &none      &mkp MB1   &mkp MB2   &tb_scr    &none
+&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans     &none      &none     &tb_scr    &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN
+&bt BT(0)  &bt BT(1)  &bt BT(2)  &bt BT(3)  &bt BT(4)  &none      &none     &none      &mkp MB1   &mkp MB2   &LCTRL    &LSHFT
 &trans     &trans     &trans     &trans     &trans                          &trans     &trans     &trans     &trans     &trans
             >;
         };
