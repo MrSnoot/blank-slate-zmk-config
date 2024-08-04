@@ -131,6 +131,13 @@
 
     combos {
         compatible = "zmk,combos";
+        // Both sides
+        caps_word {
+            timeout-ms = <50>;
+            key-positions = <12 23>;
+            layers = <OPY_L>;
+            bindings = <&caps_word>;
+        };
         // Left side
         combo_esc {
             timeout-ms = <50>;
@@ -247,7 +254,6 @@
              layers = <OPY_L>;
             bindings = <&kp LC(X)>;
         };
-        // combos copy all, copy word, copy line
         combo_copy_all {
             timeout-ms = <50>;
             key-positions = <32 33>;
