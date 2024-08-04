@@ -11,6 +11,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define TBLE_DUAL_2U 1
+#define BT(n) BT_SEL n
 
 #define OPY_L 0
 #define NAV_L 1
@@ -28,11 +29,18 @@
 #define HRM_O_N &bhm LCTRL N
 #define HRM_O_S &bhm LALT S
 #define HRM_O_R &bhm RSHFT R
+#define OSL_NUM &sl NUM_L
+#define NAV_SPC &lt NAV_L SPACE
+#define NAV_ENT &lt NAV_L ENTER
+#define OSL_SYM &sl SYM_L
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
 
-#define BT(n) BT_SEL n
+&caps_word {
+// - ä ö ü 
+    continue-list = <SLASH SEMI QUOT LBKT>;
+};
 
 / {
     chosen {
@@ -331,20 +339,20 @@
         base_layer {
             label = "Base";
             bindings = <
- &kp Q        &kp Y       &kp O        &kp P      &kp Z      XXXXXXX      XXXXXXX      &kp W      &kp C      &kp M       &kp V      &kp X
- HRM_O_H      HRM_O_A HRM_O_E HRM_O_I      &kp K      XXXXXXX      XXXXXXX      &kp G      HRM_O_T      HRM_O_N HRM_O_S HRM_O_R
- &kp J        &kp SEMI    &kp QUOT     &kp U      &kp LBKT   XXXXXXX      XXXXXXX      &kp B      &kp D      &kp L       &kp F      &bhm LGUI MINUS 
- XXXXXXX        XXXXXXX       XXXXXXX        &sl NUM_L  &lt NAV_L SPACE       &lt NAV_L ENTER       &sl SYM_L  XXXXXXX       XXXXXXX      XXXXXXX
+ &kp Q      &kp Y      &kp O      &kp P      &kp Z      XXXXXXX    XXXXXXX    &kp W      &kp C      &kp M      &kp V      &kp X
+ HRM_O_H    HRM_O_A    HRM_O_E    HRM_O_I    &kp K      XXXXXXX    XXXXXXX    &kp G      HRM_O_T    HRM_O_N    HRM_O_S    HRM_O_R
+ &kp J      &kp SEMI   &kp QUOT   &kp U      &kp LBKT   XXXXXXX    XXXXXXX    &kp B      &kp D      &kp L      &kp F      &bhm LGUI MINUS 
+ XXXXXXX    XXXXXXX    XXXXXXX    OSL_NUM    NAV_SPC                          NAV_ENT    OSL_SYM    XXXXXXX    XXXXXXX    XXXXXXX
             >;
         };
 
         nav_layer {
             label = "Nav";
             bindings = <
-&bt BT_CLR XXXXXXX      XXXXXXX      XXXXXXX      XXXXXXX      XXXXXXX      XXXXXXX     XXXXXXX      &kp HOME   &kp UP     &kp END    &kp PG_UP
-&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  _______     XXXXXXX      XXXXXXX     &tb_scr    &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN
-&bt BT(0)  &bt BT(1)  &bt BT(2)  &bt BT(3)  &bt BT(4)  XXXXXXX      XXXXXXX     XXXXXXX      &mkp MB1   &mkp MB2   &kp LCTRL  &kp LSHFT
-_______     _______     _______     _______     _______                          _______     _______     _______     _______     _______
+&bt BT_CLR XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    XXXXXXX    &kp HOME   &kp UP     &kp END    &kp PG_UP
+&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  _______    XXXXXXX    XXXXXXX    &tb_scr    &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN
+&bt BT(0)  &bt BT(1)  &bt BT(2)  &bt BT(3)  &bt BT(4)  XXXXXXX    XXXXXXX    XXXXXXX    &mkp MB1   &mkp MB2   &kp LCTRL  &kp LSHFT
+_______    _______    _______    _______    _______                          _______    _______    _______    _______    _______
             >;
         };
 
