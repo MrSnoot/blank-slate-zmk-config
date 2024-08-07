@@ -130,31 +130,31 @@
         tb_scr: trackball_toggle_scroll {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <40>;
+            wait-ms = <25>;
+            // tap-ms = <40>;
             bindings 
                 = <&kp SLCK>
-                , <&macro_wait_time 30>
+                , <&macro_wait_time 25>
                 , <&kp SLCK>;
         };
         tb_dpi: trackball_change_dpi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <40>;
+            wait-ms = <25>;
+            // tap-ms = <40>;
             bindings 
                 = <&kp KP_NLCK>
-                , <&macro_wait_time 30>
+                , <&macro_wait_time 25>
                 , <&kp KP_NLCK>;
         };
         tb_rst: trackball_reset {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <40>;
+            wait-ms = <25>;
+            // tap-ms = <40>;
             bindings 
                 = <&kp CLCK>
-                , <&macro_wait_time 30>
+                , <&macro_wait_time 25>
                 , <&kp CLCK>;
         };
     };
