@@ -49,13 +49,13 @@
 &lt { quick_tap_ms = <200>; };
 
 &caps_word {
-// - ä ö ü 
-    continue-list = <SLASH SEMI QUOT LBKT>;
+// - ä ö ü Backspace
+    continue-list = <SLASH SEMI QUOT LBKT BSPC>;
 };
 
 / {
     chosen {
-       zmk,matrix_transform = &dual_2u_transform;
+       zmk,matrix_transform = &dual_ 2u_transform;
     };
 
     behaviors {
