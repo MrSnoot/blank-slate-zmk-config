@@ -55,7 +55,7 @@
 
 / {
     chosen {
-       zmk,matrix_transform = &dual_ 2u_transform;
+       zmk,matrix_transform = &dual_2u_transform;
     };
 
     behaviors {
