@@ -11,7 +11,7 @@
     combos {
         compatible = "zmk,combos";
         // Both sides
-        caps_word {
+        combo_caps_word {
             timeout-ms = <50>;
             key-positions = <12 23>;
             layers = <OPY_L>;
