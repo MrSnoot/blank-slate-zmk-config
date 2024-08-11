@@ -19,6 +19,8 @@
 #define SYM_L 3
 #define ADJ_L 4
 
+#include "combos.dtsi"  // requires layer aliases
+
 #define _______ &trans
 #define XXXXXXX &none
 
