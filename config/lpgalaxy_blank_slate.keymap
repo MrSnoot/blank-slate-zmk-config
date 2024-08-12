@@ -350,7 +350,7 @@
         };
         combo_num_word {
             timeout-ms = <50>;
-            key-positions = <32 33>;
+            key-positions = <9 22>;
             layers = <OPY_L>;
             bindings = <&num_word NUM_L>;
         };
