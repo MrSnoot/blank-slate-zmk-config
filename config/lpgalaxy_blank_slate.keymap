@@ -46,6 +46,8 @@
 #define NUM_6 &bhm LALT N6
 #define NUM_PLS &bhm RSHFT RBKT
 
+#define NW_CNCL &kp K_CANCEL
+
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
 
@@ -395,7 +397,7 @@ _______    _______    _______    _______    _______                          ___
 &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     XXXXXXX    XXXXXXX    &kp LS(N7)   &kp N7     &kp N8     &kp N9     &kp SLASH
 NUM_F6     NUM_F7     NUM_F8     NUM_F9     &kp F10    XXXXXXX    XXXXXXX    &kp LS(RBKT) NUM_4      NUM_5      NUM_6      NUM_PLS
 &kp F11    &kp F12    XXXXXXX    &s_ln_f5   XXXXXXX    XXXXXXX    XXXXXXX    &kp COMMA    &kp N1     &kp N2     &kp N3     &kp DOT
-_______    _______    _______    _______    _______                          &kp N0       _______    _______    _______    _______
+_______    _______    _______    _______    _______                          &kp N0       NW_CNCL    _______    _______    _______
             >;
         };
 
