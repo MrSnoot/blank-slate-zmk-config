@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors/num_word.dtsi>
 
 #define TBLE_DUAL_2U 1
 #define BT(n) BT_SEL n
@@ -49,8 +50,12 @@
 &lt { quick_tap_ms = <200>; };
 
 &caps_word {
-// - ä ö ü Backspace
-    continue-list = <SLASH SEMI QUOT LBKT BSPC>;
+  // - ä ö ü Backspace
+  continue-list = <SLASH SEMI QUOT LBKT BSPC>;
+};
+
+&num_word {
+  continue-list = <BSPC DEL DOT COMMA>;  // do not continue on PLUS, MINUS, STAR, FSLH, EQUAL
 };
 
 / {
@@ -342,6 +347,12 @@
             key-positions = <32 33>;
             layers = <NAV_L>;
             bindings = <&dbl_clk>;
+        };
+        combo_num_word {
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            layers = <OPY_L>;
+            bindings = <&num_word NUM_L>;
         };
         // combos task previous, task next hinzufügen
     };
