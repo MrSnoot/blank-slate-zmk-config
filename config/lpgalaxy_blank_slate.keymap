@@ -57,7 +57,8 @@
 };
 
 &num_word {
-  continue-list = <BSPC DEL DOT COMMA>;  // do not continue on PLUS, MINUS, STAR, FSLH, EQUAL
+   // do continue on Backspace delete . , * + - =
+  continue-list = <BSPC DEL DOT COMMA LS(RBKT) RBKT SLASH LS(N0)>;
 };
 
 / {
@@ -238,7 +239,7 @@
         combo_equal {
             timeout-ms = <50>;
             key-positions = <1 2>;
-             layers = <OPY_L>;
+             layers = <OPY_L NUM_L>;
             bindings = <&kp LS(N0)>;
         };
         combo_percent {
