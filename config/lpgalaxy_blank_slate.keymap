@@ -181,7 +181,7 @@
     combos {
         compatible = "zmk,combos";
         // Both sides
-        caps_word {
+        combo_caps_word {
             timeout-ms = <50>;
             key-positions = <12 23>;
             layers = <OPY_L>;
@@ -354,7 +354,7 @@
         combo_num_word {
             timeout-ms = <50>;
             key-positions = <9 22>;
-            layers = <OPY_L>;
+            layers = <OPY_L NUM_L>;
             bindings = <&num_word NUM_L>;
         };
         // combos task previous, task next hinzufügen
