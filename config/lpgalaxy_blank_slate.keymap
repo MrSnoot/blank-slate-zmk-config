@@ -52,12 +52,12 @@
 &lt { quick_tap_ms = <200>; };
 
 &caps_word {
-  // - ä ö ü Backspace
-  continue-list = <SLASH SEMI QUOT LBKT BSPC>;
+  // do continue on: Backspace - ä ö ü
+  continue-list = <BSPC SLASH SEMI QUOT LBKT>;
 };
 
 &num_word {
-   // do continue on Backspace delete . , * + - =
+   // do continue on: Backspace delete . , * + - =
   continue-list = <BSPC DEL DOT COMMA LS(RBKT) RBKT SLASH LS(N0)>;
 };
 
