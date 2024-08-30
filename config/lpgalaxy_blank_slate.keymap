@@ -139,7 +139,7 @@
         tb_scr: trackball_toggle_scroll {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <25>;
+            wait-ms = <22>;
             // tap-ms = <40>;
             bindings 
                 = <&kp SLCK>
@@ -149,7 +149,7 @@
         tb_dpi: trackball_change_dpi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <25>;
+            wait-ms = <22>;
             // tap-ms = <40>;
             bindings 
                 = <&kp KP_NLCK>
@@ -159,7 +159,7 @@
         tb_rst: trackball_reset {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <25>;
+            wait-ms = <22>;
             // tap-ms = <40>;
             bindings 
                 = <&kp CLCK>
