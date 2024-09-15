@@ -38,16 +38,14 @@
 #define HRM_O_S &bhm LALT S
 #define HRM_O_R &bhm RSHFT R
 
-#define NUM_F6 &bhm LSHFT F6
-#define NUM_F7 &bhm LALT F7
-#define NUM_F8 &bhm LCTRL F8
-#define NUM_F9 &bhm LGUI F9
-#define NUM_4 &bhm LGUI N4
-#define NUM_5 &bhm LCTRL N5
-#define NUM_6 &bhm LALT N6
-#define NUM_PLS &bhm RSHFT RBKT
-
-#define NW_CNCL &kp K_CANCEL
+#define NF_F6 &bhm LSHFT F6
+#define NF_F7 &bhm LALT F7
+#define NF_F8 &bhm LCTRL F8
+#define NF_F9 &bhm LGUI F9
+#define NF_4 &bhm LGUI N4
+#define NF_5 &bhm LCTRL N5
+#define NF_6 &bhm LALT N6
+#define NF_PLS &bhm RSHFT RBKT
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -403,10 +401,10 @@ _______    _______    _______    _______    _______                          ___
         num_func_layer {
             label = "Num_Func";
             bindings = <
-&kp F1     &kp F2     &kp F3     &kp F4     &kp F5     XXXXXXX    XXXXXXX    &kp LS(N7)   &kp N7     &kp N8     &kp N9     &kp SLASH
-NUM_F6     NUM_F7     NUM_F8     NUM_F9     &kp F10    XXXXXXX    XXXXXXX    &kp LS(RBKT) NUM_4      NUM_5      NUM_6      NUM_PLS
-&kp F11    &kp F12    XXXXXXX    &s_ln_f5   XXXXXXX    XXXXXXX    XXXXXXX    &kp COMMA    &kp N1     &kp N2     &kp N3     &kp DOT
-_______    _______    _______    _______    _______                          &kp N0       _______    _______    _______    _______
+&kp F1    &kp F2    &kp F3    &kp F4    &kp F5    XXXXXXX   XXXXXXX   &kp LS(N7)   &kp N7    &kp N8    &kp N9    &kp SLASH
+NF_F6     NF_F7     NF_F8     NF_F9     &kp F10   XXXXXXX   XXXXXXX   &kp LS(RBKT) NF_4      NF_5      NF_6      NF_PLS
+&kp F11   &kp F12   XXXXXXX   &s_ln_f5  XXXXXXX   XXXXXXX   XXXXXXX   &kp COMMA    &kp N1    &kp N2    &kp N3    &kp DOT
+_______   _______   _______   _______   _______                       &kp N0       _______   _______   _______   _______
             >;
         };
 
